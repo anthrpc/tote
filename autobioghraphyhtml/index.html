@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/f27c25cb64.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Cedric</title>
+    <!--Made entirely by Marcus Cedric R Idia-->
+</head>
+<body>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show')
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+        font-family: 'Poppins', sans-serif;
+        background-color: #0c192c;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+    padding-left: 600px;
+    padding-top: 50px;
+    color: #EAEAEA;
+}
+
+.text2 {
+    text-align: right;
+    padding-right: 600px;
+    color: #EAEAEA;
+}
+
+.text3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #EAEAEA;
+    font-weight: bold;
+}
+
+.text4 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: dashed;
+}
+
+.logo {
+    font-size: 28px;
+    color: #FF2E63;
+}
+
+span {
+    color: #EAEAEA;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #EAEAEA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF2E63;
+    filter: blur(0.5px);
+    transition-duration: 1200ms;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%) ;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.logos{
+    display: flex;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.logo:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.logo:nth-child(6) {
+    transition-delay: 1000ms;
+}
+
+.logo:nth-child(9) {
+    transition-delay: 1200ms;
+}
+    </style>
+
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Marcus<span>Cedric</span></h2>
+            <ul>
+                <li><a href="basicinfo.html">Basic Info</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="vof.html">Vision Of The Future</a></li>
+            </ul>
+        </nav>
+        <div class>
+            <H1 class="text">Hello,</H1>
+            <H1 class="text2">World!</H1>
+            <p class="text3">I am Marcus Cedric R Idia, A 13 Year Old Programmer.</p>
+            <p class="text3">I build Websites, Games, Apps, and Robots.</p>
+            <p class="text3">This website is made by Marcus Cedric R Idia as an Autobiography for a computer project. </p>
+            <H1 class="text4">Scroll To See More...</H1>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="bubbles"></div>
+    </div>
+    
+
+    <section class="hidden">
+        <h1>Hello! Good-Day</h1>
+        <h1>| My Name is |</h1>
+        <p>Marcus Cedric</p>
+        <h2>I Live In </h2>
+        <h1>Buenlag west No.9 North Luzon, Pangasinan, Mangaldan, 2432</h1> 
+
+
+    </section>
+    
+    <section class="hidden">
+        <h1>I AM</h1>
+        <p>13 YEARS OLD</p>
+        <p>My Birthdate is 11/15/09</p>
+        <p>November 15, 2009</p>
+    </section>
+    
+    <section class="hidden">
+        <h1>WHAT I LIKE TO DO</h1>
+        <p>MY HOBBIES:</p>
+        <ul>
+            <li>Playing Games With Friends</li>
+            <li>Coding</li>
+            <li>Arduino</li>
+            <li>Biking</li>
+            <li>Swimming</li>
+            <li>Taking Pictures</li>
+            <li>Sleeping</li>
+            <li>Eating</li>
+            <li>Playing Drums</li>
+            <li>PLaying The Guitar, Electric & Acoustic</li>
+            <li>PLaying the Piano</li>
+        </ul>
+    </section>
+
+    <section class="hidden">
+        <h1>ABOUT</h1>
+        <p>My Mom is 40 Years Old</p>
+        <p>My Dad is 40 Years Old Aswell</p>
+        <p>My Mom was in the UAE when she was pregnant</p>
+        <p>We originally live in Alaminos City, Pangasinan</p>
+        <h1>I am the Grand-child of Former Principal Cesar Idia</h1>
+        <h1> My Mom works as a Freelancer </h1>
+        <h1>My Dad works at Digital Defenders. He is also expert in Ethical Hacking & Programming.</h1>
+    </section>
+
+
+    <section class="hidden">
+        <h1>My Story</h1>
+        <p class="text3">So when my mom was pregnant, she was in the UAE, Years later, she decides to go home to the Philippines. I was born in LMC. Going back, we lived in alaminos for 4 Years. My mom worked in smart with the role of being a Manager. She invites me to her office sometimes. My dad, On the other hand, was in a band and played instruments too. After the 4 years in Alaminos, We went to Mangaldan. I personally grewm up in Mangaldan but I do miss Alaminos. In 2013, My little brother was born. He's very annoying but i dont care, he's my brother after all. My brother goes to CMS too, His name is Marius Kian Roces Idia. Also in 2013, My Grandma died ( The wife of Lolo Cesar Idia), I didnt know what was happening because I was so little back then. I was a Honor student back then, but it all stopped when i was grade 4. I lost motivation to study, Or were the subjects just too hard? either way, im not an honor student anymore. Now, Grade 7. Im doing my Best to get back in the honor roll, or to be a silver awardee.  </p>
+    </section>
+
+
+
+    <section class="hidden">
+        <h1>This Is Me</h1>
+        <p>Pictures:</p>
+        <div class="logos">
+            <div class="logo hidden">
+                <img src="1.jpg" alt="" height="256px " width="192px">
+            </div>
+            <div class="logo hidden">
+                <img src="2.jpg" alt="" height="256px" width="192px">
+            </div>
+            <div class="logo hidden">
+                <img src="3.jpg" alt="" height="256px" width="192px">
+            </div>
+            <div class="logo hidden">
+                <img src="4.jpg" alt="" height="256px" width="192px">
+            </div>
+            <div class="logo hidden">
+                <img src="5.jpg" alt="" height="256px" width="192px">
+            </div>
+            <div class="logo hidden">
+                <img src="6.jpg" alt="" height="256px" width="192px">
+            </div>
+            <div class="logo hidden">
+                <img src="9.jpg" alt="" height="256px" width="192px">
+            </div>
+        </div>
+    </section>
+    
+    <section class="hidden">
+        <h1>VISION OF THE FUTURE</h1>
+        <p class="text3">I see myself as a CompSci or I.T. Graduate in the future, I would study in DSLU or Any popular university to be honest. 
+            I would like to work as a Ethical Hacker too, just like my dad, or just work in law. 
+        </p>
+    </section>
+
+    <section class="hidden">
+        <h1>That's All! Byeee!</h1>
+    </section>
+
+    
+
+</body>
+</html>
